@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>emailer2</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
+
+  <style>
+
+.center{
+         margin-left: auto;
+        margin-right: auto;
+        align-items: center;text-align: center;
+}
+.upper{
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 595px;
+    background-color: #E0AC70;
+    color: #683114;
+    
+    padding: 0px;
+}
+hr{
+    border-style: solid none none;
+    border-color: #683114;
+    margin: 0px;
+    color: #683114;
+    opacity: 50%;
+}
+.top td{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+    letter-spacing: 1px;font-family:  serif;
+    opacity: 300%;
+}
+.cntr{
+    background-image: url("https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/Header+Banner+2.jpg");
+    width:595px;
+    height: 600px;
+    background-repeat: no-repeat;
+}
+.underline{
+      padding-bottom: 0px; 
+      border-bottom-style: solid; 
+      border-bottom-width: 2px; 
+      width: fit-content; 
+}
+.underline-thick{
+padding-bottom: 4px; 
+      border-bottom-style: solid; 
+      border-bottom-width: 3.1px; 
+      width: fit-content; 
+}
+.underline-thin{
+padding-bottom: 0px; 
+border-bottom-style: solid; 
+border-bottom-width: 1px; 
+width: fit-content; 
+}
+.underline-mid{
+    padding-bottom: 0px; 
+      border-bottom-style: solid; 
+      border-bottom-width: 2.5px; 
+      width: fit-content; 
+}
+.mid{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 595px;
+    background-color: #E0AC70;
+    color: #683114;
+   
+    padding: 0px;
+    padding-top: 30px;
+}
+.mid-black{
+    background-color: black;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+    text-align: center;
+}
+.mid-2{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 595px;
+    background-color: #dcdbe0;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/1Footer+Banner.jpg");
+    height: 153px;
+}
+.mid-3{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 595px;
+    background-color: #E0AC70;
+    color: #683114;
+}
+.abc{
+    background-color: #CA9867;
+    margin: 0px 50px;
+    border-radius: 15px;
+}
+.bottom{
+    background-color: black;
+    width: 595px;
+    color: white;
+    
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+.zzz{
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    padding-top: 6px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.zzza{
+    background-color: white;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    width: 23px;
+    height: 23px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.last{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    font-family:  serif;
+}
+.jkl{
+    width: 222px;
+}
+.btn {
+  
+    border-radius: 31px;
+    font-family: Arial;
+    color: #683114;
+    font-size: 20px;
+    background: #ffffff;
+    padding: 9px 27px 8px 27px;
+    border: solid #ffffff 0px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    text-decoration: none;
+   
+  }
+  .btm {
+    -webkit-border-radius: 31;
+    -moz-border-radius: 31;
+    border-radius: 31px;
+    font-family: Arial;
+    color: #683114;
+    font-size: 20px;
+    background: #ffffff;
+    padding: 7px 22px 6px 22px;
+    border: solid #ffffff 0px;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  
+  .btm:hover {
+    text-decoration: none;
+   
+  }
+  .bttn {
+    -webkit-border-radius: 3;
+    -moz-border-radius: 3;
+    border-radius: 3px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 25px 35px 25x 35px;
+    border: solid #ffffff 1px;
+    text-decoration: none;
+  }
+  
+  .bttn:hover {
+    text-decoration: none;
+  }
+  .btttn {
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: -moz-linear-gradient(top, #000000, #000000);
+    background-image: -ms-linear-gradient(top, #000000, #000000);
+    background-image: -o-linear-gradient(top, #000000, #000000);
+    background-image: linear-gradient(to bottom, #000000, #000000);
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 1px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 9px 28px 9px 28px;
+    border: solid #f7f9fa 0.5px;
+    text-decoration: none;
+  }
+  
+  .btttn:hover {
+    text-decoration: none;
+    
+  }
+  </style>
+
+ 
+</head>
+<body>
+    <div class="upper">
+        <div style="
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;padding-bottom: 20px;">
+        <a href="#">
+        <img  style="width: 70px;height: 40px;margin-left: auto;margin-right: auto;" src="https://www.lotus-organics.com/public/images/logo.png" alt="logo,jpg"></div></a>
+        <hr>
+        <table class="top" style="border-spacing: 0px;padding-left: 0px;margin-right: auto;
+        margin-left: auto;">
+            <tr>
+                <td>
+                  <a href="https://www.lotus-organics.com/most-loved" style="text-decoration: none;color:#683114 ;" >
+                    <p style="margin: 10px 0px;font-weight: 500;">Skin Care</p></a></td>
+                 <td><span>&#8226;</span></td>      
+                <td><a href="https://www.lotus-organics.com/products/hair-care/scalp-care" style="text-decoration: none;color: #683114;">
+                    <p style="margin: 10px 0px;font-weight: 500;"> Hair Care</p></a> </td>
+                <td><span>&#8226;</span></td>  
+                <td><a href="https://www.lotus-organics.com/ingredient" style="text-decoration: none;color: #683114;">
+                    <p style="margin:10px 0px;font-weight: 500;">Our Ingredients</p></a> </td>
+            </tr>
+        </table>
+        <hr>
+        <div class="center">
+        <h1 style="font-family:  serif;font-weight: 800;margin-bottom: 27px;font-size: 40px;">The wait is finally over!</h1>
+        <p style="font-weight: 600; letter-spacing: 2.5px;margin-bottom: 5px; font-size: 15.5px;font-family: serif;">Our new</p>
+        <h1 class="underline center" style="font-family:  serif;font-weight: 400;margin-top: 0px;margin-bottom: 10px;font-size: 35px;">HAIR CARE RANGE</h1>
+        <p style="font-weight: 600;  letter-spacing: 2.5px;margin-top: 13px;font-size: 15.5px;font-family: serif;">is now yours</p>
+        <div style="align-content: center;text-align: center;padding: 0px 234px;">
+        <a href="https://www.lotus-organics.com/products/hair-care/scalp-care" style="text-decoration: none;">
+        <p style="background-color: white;color: #683114;border-radius: 31px;font-size: 10px;width: 90px;
+        padding: 6px 18px;margin-left: auto;margin-right: auto;font-weight: 600;font-family: serif
+        ;margin-top: 30px;letter-spacing: 1px;">SHOP NOW!</p> </a></div>
+        <div class="cntr" style="text-align: left;">
+            <h1 style="padding-top: 70px;margin-bottom: 3px;"><span style="color: white;font-size: 110px;margin-left: 40px;padding-top: 70px;
+            font-family:  Geneva, Tahoma, sans-serif;font-weight: 700;
+            padding-bottom: 0px;" class="underline-thick">20%</span>
+              <sup style="vertical-align: 130%;font-family: 'Cardo', serif;font-weight: 20;color: white;margin-left: -10px;font-size: 30px;">Off
+                 </sup> </h1>
+                    <h1 style="color: white;font-family: 'Cardo', serif;font-size: 40px;font-weight: 1;padding-left: 35px;margin-top: 0px;
+                    margin-bottom: 17px;font-weight: 100;">Only For You</h1>
+                 <div style="padding-left: 35px;">  <button disabled class="bttn" ><p style="margin: 5px 10px; font-size: 14px;font-family: serif;
+                    letter-spacing: 1.5px;">Use Code:<span 
+                    style="font-weight: 600;">HAIR20</span> </p> </button></div> 
+        </div>
+    </div>
+    <div class="mid">
+        <div class="mid-black">
+             <h1 style="padding-top: 30px; padding-bottom: 10px;font-family: serif;font-weight: 400;font-size: 32px;">What inspired us to do this?</h1>
+             <p style="padding-left: 35px; padding-right: 35px;  padding-bottom: 40px;font-size: 13px;font-family: serif;font-weight: 100;
+             letter-spacing: 0.5px;">
+                With the increase in pollution,now more than ever,and an unhealthy dependency on the chemical based
+                 lifestyle that we are having now a days ,the liveliness of our hair has died somewhere along the way.
+                 Dust and pollution give your hair a slow death and the chemical based shampoo plays a catalyst in 
+                 that process,making the hair even more lifeless and damaged.But what if you could use something organic
+                 that allow us not to treat our hair with the natural herb extracts but also to wash them everyday that 
+                 too without freaking about the hairloss.Well we have invented just the right thing for you!A complete
+                 hair care solution that will give your hair the needed nourishment from the root to tip and make them 
+                 'ready to go out' everyday!
+             </p>
+        </div>
+        <div> <h1 class="underline-mid" style=" margin-left: auto; margin-right: auto;padding-top: 10px;  margin-bottom: 5px;
+            font-family: 'Cardo', serif;font-weight: 600;font-size: 32px;" >
+            What's in it?</h1></div>
+        <table class="center" style="border-spacing: 0px 25px;padding-bottom: 20px;">
+            <tr>
+                <td style="padding: 0px;"><a href="#">
+                    <img class="jkl" src="https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/Product-01.jpg" alt="Asset 2 2 20" style="border-radius: 20px;"></a></td>
+                <td style="padding: 0px;"> <h2 class="underline-mid" style="margin-left: auto; margin-right: auto;font-family: 'Cardo', serif;font-size: 20px;
+                    ">Hair Fall Control</h2>
+                     <div  style="align-content: center;text-align: center;padding: 0px 82px;">
+                    <a href="https://www.lotus-organics.com/products/hair-care/hair-fall-control" style="text-decoration: none;">
+                        <p style="background-color: white;color: #683114;border-radius: 31px;font-size: 8px;width: 75px;
+                        padding: 6px 15px;margin-left: auto;margin-right: auto;font-weight: 600;font-family: 'Cardo',serif
+                        ;margin-top: 0px;letter-spacing: 1px;font-weight: 700;">SHOP NOW!</p> </a></div>
+                     </td>
+            </tr>
+            <tr>
+                
+                <td style="padding: 0px;"> <h2 class="underline-mid" style=" margin-left: auto; margin-right: auto;font-family:serif;font-size: 20px;
+                    ">Scalp Care</h2>
+                     <div  style="align-content: center;text-align: center;padding: 0px 82px;">
+                   <a href="https://www.lotus-organics.com/products/hair-care/scalp-care" style="text-decoration: none;">
+                    <p style="background-color: white;color: #683114;border-radius: 31px;font-size: 8px;width: 75px;
+                    padding: 6px 15px;margin-left: auto;margin-right: auto;font-weight: 600;font-family: 'Cardo',serif
+                    ;margin-top: 0px;letter-spacing: 1px;font-weight: 700;">SHOP NOW!</p> </a></div>
+                </td>
+                <td style="padding: 0px;"><a href="#">
+                    <img class="jkl" src="https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/Product-02.jpg" alt="Asset 2 2 20" style="border-radius: 20px;"></a></td>
+            </tr>
+            <tr>
+                <td style="padding: 0px;"><a href="#">
+                    <img class="jkl" src="https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/Product-03.jpg" alt="Asset 2 2 20" style="border-radius: 20px;"></a></td>
+                <td style="padding: 0px;"> <h2 class="underline-mid" style=" margin-left: auto; margin-right: auto;font-family: 'Cardo', serif;font-size: 20px;
+                    ">Dandruff Control</h2>
+                    <div  style="align-content: center;text-align: center;padding: 0px 82px;">
+                    <a href="https://www.lotus-organics.com/products/hair-care/scalp-care/dandruff-control-shampoo" style="text-decoration: none;">
+                        <p style="background-color: white;color: #683114;border-radius: 31px;font-size: 8px;width: 75px;
+                        padding: 6px 15px;margin-left: auto;margin-right: auto;font-weight: 600;font-family: 'Cardo',serif
+                        ;margin-top: 0px;letter-spacing: 1px;font-weight: 700;">SHOP NOW!</p> </a></div>
+                </td>
+            </tr>
+        </table>
+       
+    </div>
+    <div class="mid-2">
+        <h1 style="margin: 0px;color: white;padding-top: 35px; padding-left: 80px;font-size: 30px;
+        font-family: 'Cardo', serif;font-weight: 500;line-height: 35px;" >Re-think your hair <br>
+             the <span class="underline-mid">organic</span> way</h1>
+    </div>
+    <div class="mid-3" >
+        <div class="abc">
+        <h2 class="underline-mid" style="margin-bottom: 0px;margin-left: auto;
+        margin-right: auto; padding-top: 20px;font-family: 'Cardo', serif;;margin-top: 0px;font-size: 20px;"  >
+            Brand Promises</h2>
+        <table style=" border-collapse: collapse;margin-top:30px;margin-left: auto;margin-right: auto; ;">
+            <tr>
+                <td style="padding: 5px;" ><a href="#">
+                     <img style="width: 100px;height: 100px;padding-bottom: 20px;" class="image" src="https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/02.png" alt="preservative"></a> </td>
+                <td style="padding: 5px;" ><a href="#">
+                     <img style="width: 100px;height: 100px;padding-bottom: 20px;" src="https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/04.png" alt="paraben"> </a></td>
+                <td style="padding: 5px;" ><a href="#">
+                     <img style="width: 100px;height: 100px;padding-bottom: 20px;" class="image" src="https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/01.png" alt="sulphate"></a> </td>
+                <td style="padding: 5px;" > <a href="#">
+                    <img style="width: 100px;height: 100px;padding-bottom: 20px;" class="image" src="https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/03.png" alt="cruelty"></a> </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div class="bottom">
+       <div style="text-align: center; margin-right: auto;margin-left: auto;">
+           
+              
+                   <p class="underline" style="font-size: 25px;font-family: serif;text-decoration: none;
+                   margin-left: auto; margin-right: auto; padding-top: 25px;margin-bottom: 15px;  margin-top: 0px;">Follow us</p>
+                   <a href="https://www.facebook.com/lotusorganicsplus/">
+                    <img src="https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/facebook-app-symbol.png" class="zzz"></a>
+                   <a href="https://www.instagram.com/p/CITIv6bFOgo/">
+                    <img src="https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/instagram-logo.png" class="zzza"></a>
+                   <a href="https://www.youtube.com/channel/UCHmKYRBBBwIeVc-Vm4iazog">
+                    <img src="https://s3.ap-south-1.amazonaws.com/static.lotus-organics.com/youtube.png" class="zzza"></a> 
+                    <p class="underline" style="font-size: 18px;margin-left: auto;margin-right:auto;font-family: serif;
+                    margin-top: 10px; letter-spacing: 1px;text-decoration: none;">Have any query?</p> 
+                    <p style="font-size: 13px;margin-left: 10px;letter-spacing: 1px;color: white;font-family: serif;
+                    ">Email us at <br>care@lotus-organics.com</p>
+             
+               
+           
+        </div>
+        <div class="last">
+         <div style="align-content: center;text-align: center;padding: 0px 190px;">
+            <a href="https://www.lotus-organics.com/" style="text-decoration: none;color: white;">
+                <p style="background-color: black;color: white;border-radius: 1px;font-size: 13px;width: 170px;
+                padding: 9px 23px;font-family: 'Cardo',serif
+                ;margin-top: 0px;letter-spacing: 1px;border: solid #ffffff 1px;">
+                
+                www.lotus-organics.com </p></a>
+         </div>
+            
+         
+         <p style="font-size: 13px;letter-spacing: 0.5px;">
+            <a href="https://www.lotus-organics.com/page/faqs" style="text-decoration: none;color: white;"><span>FAQ'S /</span></a>
+            <a href="https://www.lotus-organics.com/our-story" style="text-decoration: none;color: white;"><span>About Us /</span></a>
+            <a href="https://www.lotus-organics.com/page/privacy-policy" style="text-decoration: none;color: white;"><span>Privacy Policy /</span></a>
+            <a href="https://www.lotus-organics.com/page/terms-conditions" style="text-decoration: none;color: white;"><span>Terms & Conditions /</span></a>
+            <a href="https://www.lotus-organics.com/contact-us" style="text-decoration: none;color: white;"><span>Contact Us</span></a>
+           </p>
+        </div>
+    </div>
+   
+
+
+    
+</body>
+</html>
